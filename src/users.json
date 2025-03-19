@@ -1,0 +1,96 @@
+[
+  {
+    "name": "alice",
+    "did": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT",
+    "secrets": [
+      {
+        "id": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#sign",
+        "type": "JsonWebKey2020",
+        "privateKeyJwk": {
+          "crv": "Ed25519",
+          "d": "pFRUKkyzx4kHdJtFSnlPA9WzqkDT1HWV0xZ5OYZd2SY",
+          "kty": "OKP",
+          "x": "G-boxFB6vOZBu-wXkm-9Lh79I8nf9Z50cILaOgKKGww"
+        }
+      },
+      {
+        "id": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#encrypt",
+        "type": "JsonWebKey2020",
+        "privateKeyJwk": {
+          "crv": "X25519",
+          "d": "r-jK2cO3taR8LQnJB1_ikLBTAnOtShJOsHXRUWT-aZA",
+          "kty": "OKP",
+          "x": "avH0O2Y4tqLAq8y9zpianr8ajii5m4F_mICrzNlatXs"
+        }
+      }
+    ],
+    "didDocument": {
+      "id": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT",
+      "keyAgreement": [
+        "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#encrypt"
+      ],
+      "authentication": [
+        "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#sign"
+      ],
+      "verificationMethod": [
+        {
+          "id": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#sign",
+          "type": "JsonWebKey2020",
+          "controller": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT",
+          "publicKeyJwk": {
+            "crv": "Ed25519",
+            "kty": "OKP",
+            "x": "G-boxFB6vOZBu-wXkm-9Lh79I8nf9Z50cILaOgKKGww"
+          }
+        },
+        {
+          "id": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT#encrypt",
+          "type": "JsonWebKey2020",
+          "controller": "did:key:z6MksBFrztPz7tnBMoUYo2oaaeu4idRtxShvoULHEQwsHEYT",
+          "publicKeyJwk": {
+            "crv": "X25519",
+            "kty": "OKP",
+            "x": "avH0O2Y4tqLAq8y9zpianr8ajii5m4F_mICrzNlatXs"
+          }
+        }
+      ],
+      "service": []
+    }
+  },
+  {
+    "name": "bob",
+    "did": "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV",
+    "secrets": [
+      {
+        "id": "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV#encrypt",
+        "type": "JsonWebKey2020",
+        "privateKeyJwk": {
+          "crv": "X25519",
+          "d": "b9NnuOCB0hm7YGNvaE9DMhwH_wjZA1-gWD6dA0JWdL0",
+          "kty": "OKP",
+          "x": "GDTrI66K0pFfO54tlCSvfjjNapIs44dzpneBgyx0S3E"
+        }
+      }
+    ],
+    "didDocument": {
+      "id": "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV",
+      "keyAgreement": [
+        "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV#encrypt"
+      ],
+      "authentication": [],
+      "verificationMethod": [
+        {
+          "id": "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV#encrypt",
+          "type": "JsonWebKey2020",
+          "controller": "did:key:z6Mkk3VFYfqtCd9AJSERf1nY8rYFjrrdBLJHAeP4FJmEiRvV",
+          "publicKeyJwk": {
+            "crv": "X25519",
+            "kty": "OKP",
+            "x": "GDTrI66K0pFfO54tlCSvfjjNapIs44dzpneBgyx0S3E"
+          }
+        }
+      ],
+      "service": []
+    }
+  }
+]
